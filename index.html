@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-169a29ff.js"></script>
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-4032ccd6.css">
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/index-d5218c78.css">
+  </head>
+  <body class="bg-bgc">
+    <header class="border-bottom border-main border-3 py-4">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div
+        class="d-flex justify-content-between align-items-center w-100 flex-wrap"
+      >
+        <h1
+          class="d-flex justify-content-between align-items-center mb-0 me-md-6"
+        >
+          <a class="navbar-brand m-0 me-md-3" href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+              alt="logo"
+              class="img-fluid"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <span class="me-1 d-none d-md-inline">7TAO</span>
+          <span class="fs-6 d-none d-md-inline">活動訂票網</span>
+        </h1>
+        <form class="d-flex col-7 w-md-auto">
+          <input
+            class="form-control border-main py-2 py-md-3 px-2 px-md-4 rounded-0 bg-bgc lh-1"
+            type="search"
+            placeholder="探索活動"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-main text-sub rounded-0 p-25 p-md-3 lh-1"
+            type="submit"
+          >
+            <i class="icofont-search-1"></i>
+          </button>
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse flex-grow-0 ms-auto mt-4 mt-md-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a
+                class="nav-link fs-56 active"
+                aria-current="page"
+                href="index.html"
+              >
+                <i class="icofont-ui-file"></i>
+                REGISTER
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-56" href="#">
+                <i class="icofont-ui-user"></i>
+                LOGIN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <h1 class="index-title">我是首頁</h1>
+
+    <div class="card" style="width: 18rem">
+      <img src="/web-layout-training-vite/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
+      <div class="card-body">
+        <h5 class="card-title">卡片元件</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit,
+          iusto odio assumenda alias id nobis earum!
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal 按鈕 -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      打開 modal
+    </button>
+
+    <!-- Modal 元件 -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">內容</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              關閉
+            </button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">我是 footer</footer>
+    
+  </body>
+</html>
