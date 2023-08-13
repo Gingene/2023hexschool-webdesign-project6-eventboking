@@ -355,9 +355,9 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+$enable-rfs: false !default;
 $enable-validation-icons: true !default;
-$enable-negative-margins: false !default;
+$enable-negative-margins: true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
@@ -394,6 +394,9 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 2,
+  52: $spacer * 2.25,
+  55: $spacer * 2.5,
+  58: $spacer * 2.75,
   6: $spacer * 3,
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -501,7 +504,8 @@ $border-widths: (
 ) !default;
 
 $border-style: solid !default;
-$border-color: $gray-300 !default;
+// $border-color: $gray-300 !default;
+$border-color: $main !default;
 $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-end border-variables
 
@@ -590,6 +594,9 @@ $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h56-font-size: $font-size-base * 1.125 !default;
 $h6-font-size: $font-size-base !default;
+$ht-font-size: $font-size-base * 4 !default;
+$htsub-font-size: $font-size-base * 3.75 !default;
+$htcard-font-size: $font-size-base * 3 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -601,6 +608,9 @@ $font-sizes: (
   5: $h5-font-size,
   56: $h56-font-size,
   6: $h6-font-size,
+  t: $ht-font-size,
+  ts: $htsub-font-size,
+  tc: $htcard-font-size,
 ) !default;
 // scss-docs-end font-sizes
 

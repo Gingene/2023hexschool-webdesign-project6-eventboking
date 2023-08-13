@@ -8,3 +8,72 @@
 
 @import "./base/base";
 @import "./pages/index.scss";
+
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  @include pad {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+.banner {
+  height: 350px;
+  @include pad {
+    height: 518px;
+  }
+}
+
+.pic1 {
+  width: 40px;
+  height: 40px;
+  @include pad {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.sparkler-card {
+  width: 20px;
+  height: 20px;
+  @include pad {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.recent a {
+  &:first-child {
+    &:hover {
+      color: $main;
+      text-decoration: underline;
+    }
+  }
+  &:last-child {
+    &:hover {
+      color: $main;
+      background-color: $sub;
+    }
+  }
+}
+
+.my-card-font {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
