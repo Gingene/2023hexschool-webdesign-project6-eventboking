@@ -5,15 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/assets/scss/icofont/icofont.min.css" />
+    <%- include('./layout/head'); -%>
   </head>
-  <body class="bg-bgc">
+  <body>
     <%- include('./layout/header'); -%>
 
     <main class="container mt-3 mt-md-5 mb-5 mb-lg-6">
@@ -108,7 +102,7 @@
           <div
             class="card bg-main py-4 py-md-52 justify-content-center align-items-center flex-grow-1 rounded-0"
           >
-            <a href="#" class="link-sub bg-main">
+            <a href="#" class="main-btn-sub p-0">
               <h5
                 class="card-title text-center fs-4 fs-md-tc fw-bold lh-sm m-0"
               >
@@ -122,7 +116,7 @@
 
     <section class="recent container mb-5 mb-lg-68">
       <h2
-        class="d-flex justify-content-between align-items-center border border-3 px-25 px-md-5 px py-3 py-md-4 mb-4 mb-md-5"
+        class="d-flex justify-content-between align-items-center border border-3 px-25 px-md-5 py-3 py-md-4 mb-4 mb-md-5"
       >
         <span class="text-uppercase fs-4 fs-md-t">Recent</span>
         <span class="fs-6 fs-md-tc">近期活動</span>
@@ -135,7 +129,7 @@
             </h4>
             <img
               src="../assets/images/event/01.jpg"
-              class="card-img-top mb-2 mb-md-25 event-card-pic"
+              class="img-fluid mb-2 mb-md-25 event-card-pic"
               alt="event-1"
             />
             <div class="card-body p-0 text-main">
@@ -149,7 +143,7 @@
               <div
                 class="d-flex justify-content-between align-items-center border-top border-bottom border-2 py-2 py-md-25"
               >
-                <a class="d-flex align-items-center fw-bold">
+                <a href="#" class="d-flex align-items-center fw-bold">
                   <img
                     src="../assets/images/sparkler.png"
                     alt="sparkler"
@@ -159,7 +153,7 @@
                 </a>
                 <a
                   href="#"
-                  class="fw-bold"
+                  class="fw-bold card-pill-link"
                   data-bs-toggle="modal"
                   data-bs-target="#addMemberModal"
                   >開賣中
@@ -176,7 +170,7 @@
             </h4>
             <img
               src="../assets/images/event/02.jpg"
-              class="card-img-top mb-2 mb-md-25 event-card-pic"
+              class="img-fluid mb-2 mb-md-25 event-card-pic"
               alt="event-2"
             />
             <div class="card-body p-0 text-main">
@@ -189,7 +183,7 @@
               <div
                 class="d-flex justify-content-between align-items-center border-top border-bottom border-2 py-2 py-md-25"
               >
-                <a class="d-flex align-items-center fw-bold">
+                <a href="#" class="d-flex align-items-center fw-bold">
                   <img
                     src="../assets/images/sparkler.png"
                     alt="sparkler"
@@ -197,7 +191,7 @@
                   />
                   演出
                 </a>
-                <a href="#" class="fw-bold"
+                <a href="event.html" class="fw-bold card-pill-link"
                   >檢視活動
                   <i class="icofont-rounded-double-right"></i>
                 </a>
@@ -212,7 +206,7 @@
             </h4>
             <img
               src="../assets/images/event/03.jpg"
-              class="card-img-top mb-2 mb-md-25 event-card-pic"
+              class="img-fluid mb-2 mb-md-25 event-card-pic"
               alt="event-3"
             />
             <div class="card-body p-0 text-main">
@@ -225,7 +219,7 @@
               <div
                 class="d-flex justify-content-between align-items-center border-top border-bottom border-2 py-2 py-md-25"
               >
-                <a class="d-flex align-items-center fw-bold">
+                <a href="#" class="d-flex align-items-center fw-bold">
                   <img
                     src="../assets/images/sparkler.png"
                     alt="sparkler"
@@ -233,7 +227,11 @@
                   />
                   聯誼
                 </a>
-                <a href="#" class="fw-bold"
+                <a
+                  href="#"
+                  class="fw-bold card-pill-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addMemberModal"
                   >開賣中
                   <i class="icofont-rounded-double-right"></i>
                 </a>
@@ -248,7 +246,7 @@
             </h4>
             <img
               src="../assets/images/event/04.jpg"
-              class="card-img-top mb-2 mb-md-25 event-card-pic"
+              class="img-fluid mb-2 mb-md-25 event-card-pic"
               alt="event-4"
             />
             <div class="card-body p-0 text-main">
@@ -261,7 +259,7 @@
               <div
                 class="d-flex justify-content-between align-items-center border-top border-bottom border-2 py-2 py-md-25"
               >
-                <a class="d-flex align-items-center fw-bold">
+                <a href="#" class="d-flex align-items-center fw-bold">
                   <img
                     src="../assets/images/sparkler.png"
                     alt="sparkler"
@@ -269,7 +267,11 @@
                   />
                   遊戲競賽
                 </a>
-                <a href="#" class="fw-bold"
+                <a
+                  href="#"
+                  class="fw-bold card-pill-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addMemberModal"
                   >開賣中
                   <i class="icofont-rounded-double-right"></i>
                 </a>
@@ -284,7 +286,7 @@
             </h4>
             <img
               src="../assets/images/event/05.jpg"
-              class="card-img-top mb-2 mb-md-25 event-card-pic"
+              class="img-fluid mb-2 mb-md-25 event-card-pic"
               alt="event-5"
             />
             <div class="card-body p-0 text-main">
@@ -297,7 +299,7 @@
               <div
                 class="d-flex justify-content-between align-items-center border-top border-bottom border-2 py-2 py-md-25"
               >
-                <a class="d-flex align-items-center fw-bold">
+                <a href="#" class="d-flex align-items-center fw-bold">
                   <img
                     src="../assets/images/sparkler.png"
                     alt="sparkler"
@@ -305,7 +307,11 @@
                   />
                   社群活動
                 </a>
-                <a href="#" class="fw-bold"
+                <a
+                  href="#"
+                  class="fw-bold card-pill-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addMemberModal"
                   >開賣中
                   <i class="icofont-rounded-double-right"></i>
                 </a>
@@ -320,7 +326,7 @@
             </h4>
             <img
               src="../assets/images/event/06.jpg"
-              class="card-img-top mb-2 mb-md-25 event-card-pic"
+              class="img-fluid mb-2 mb-md-25 event-card-pic"
               alt="event-6"
             />
             <div class="card-body p-0 text-main">
@@ -333,7 +339,7 @@
               <div
                 class="d-flex justify-content-between align-items-center border-top border-bottom border-2 py-2 py-md-25"
               >
-                <a class="d-flex align-items-center fw-bold">
+                <a href="#" class="d-flex align-items-center fw-bold">
                   <img
                     src="../assets/images/sparkler.png"
                     alt="sparkler"
@@ -341,7 +347,11 @@
                   />
                   展覽
                 </a>
-                <a href="#" class="fw-bold"
+                <a
+                  href="#"
+                  class="fw-bold card-pill-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addMemberModal"
                   >開賣中
                   <i class="icofont-rounded-double-right"></i>
                 </a>
@@ -580,9 +590,7 @@
       </div>
     </section>
 
-    <section
-      class="container-fuild border-top border-bottom border-3 py-6 py-lg-68"
-    >
+    <section class="container-fuild border-top border-3 py-6 py-lg-68">
       <div class="text-center">
         <h3 class="fs-56 fs-md-2 fw-bold mb-25 mb-md-3">
           此刻打盹，你將做夢；此刻學習，你將圓夢
@@ -598,7 +606,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content text-center rounded-0 bg-bgc">
           <div
             class="modal-header border-bottom border-3 border-dark d-flex justify-content-center"
@@ -622,7 +630,7 @@
               您也可以先報名活動，日後再註冊帳號，<br />
               系統會在認證您的Email後，協助您找回舊的訂單。
             </p>
-            <button type="button" class="main-btn px-4 py-2 modal-btn">
+            <button type="button" class="main-btn-sub px-4 py-2 modal-btn">
               立即成為會員
             </button>
           </div>

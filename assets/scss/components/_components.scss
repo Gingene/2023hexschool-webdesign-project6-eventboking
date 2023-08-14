@@ -11,10 +11,47 @@
   }
 }
 
+.main-btn-sub {
+  @include main-btn;
+  color: $sub;
+  &:hover {
+    color: $white;
+  }
+}
+.card-underline-link {
+  &:hover {
+    color: $main;
+    text-decoration: underline;
+  }
+}
+
+.card-pill-link {
+  position: relative;
+  z-index: 1;
+  &:hover {
+    color: $main;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.25rem;
+      left: -0.5rem;
+      display: inline-block;
+      width: 1.75rem;
+      height: 1.75rem;
+      color: $main;
+      background-color: $sub;
+      z-index: -1;
+      @extend .rounded-circle;
+    }
+  }
+}
+
 @mixin tag {
   @extend .btn;
   @extend .btn-outline-main;
   @extend .rounded-0;
+  @extend .fs-7;
+  @extend .fs-md-6;
   @extend .fw-bold;
   @extend .py-1;
   @extend .pe-3;
