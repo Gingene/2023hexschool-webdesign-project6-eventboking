@@ -7,4 +7,76 @@
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 @import "./base/base";
-@import "./pages/index.scss";
+@import "./components/components";
+
+.logo {
+  width: 40px;
+  height: 40px;
+  @include pad {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+.banner {
+  height: 350px;
+  @include pad {
+    height: 518px;
+  }
+}
+
+.pic1 {
+  width: 40px;
+  height: 40px;
+  @include pad {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.sparkler-card {
+  width: 20px;
+  height: 20px;
+  @include pad {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.recent a {
+  &:first-child {
+    &:hover {
+      color: $main;
+      text-decoration: underline;
+    }
+  }
+}
+
+.event-card-pic {
+  height: 210px;
+  object-fit: cover;
+  @include pad {
+    height: 255px;
+  }
+}
+
+.recent-card-font {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.online-card-pic {
+  height: 317px;
+  aspect-ratio: 8 / 3;
+}
+
+.ablums-card-pic {
+  object-fit: cover;
+  height: 267px;
+  @include pad {
+    height: 274px;
+  }
+}

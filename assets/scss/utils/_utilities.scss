@@ -44,6 +44,10 @@ $utilities: map-merge(
         property: overflow,
         values: auto hidden visible scroll,
       ),
+    "overflow-x": (
+      property: overflow-x,
+      values: auto hidden visible scroll,
+    ),
     // scss-docs-end utils-overflow
     // scss-docs-start utils-display
     "display":
@@ -102,6 +106,23 @@ $utilities: map-merge(
         y: translateY(-50%),
       ),
     ),
+    "translate-tag": (
+      property: transform,
+      class: translate-tag,
+      values: (
+        null: translate(-50%, -50%),
+        l4: translate(-50%, -50%) rotate(-4deg),
+        r4: translate(-50%, -50%) rotate(4deg),
+      ),
+    ),
+    "rotate-card": (
+      property: transform,
+      class: rc,
+      values: (
+        l2: rotate(-2deg),
+        r2: rotate(2deg),
+      ),
+    ),
     // scss-docs-end utils-position
     // scss-docs-start utils-borders
     "border":
@@ -113,8 +134,9 @@ $utilities: map-merge(
           0: 0,
         ),
       ),
-    "border-top": (
+    "border-top1": (
       property: border-top,
+      responsive: true,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
           var(--#{$prefix}border-color),
@@ -572,7 +594,7 @@ $utilities: map-merge(
         lg: $line-height-lg,
       ),
     ),
-    "text-align": (
+    "text-align1": (
       responsive: true,
       property: text-align,
       class: text,
@@ -580,6 +602,7 @@ $utilities: map-merge(
         start: left,
         end: right,
         center: center,
+        justify: justify,
       ),
     ),
     "text-decoration": (
@@ -743,8 +766,27 @@ $utilities: map-merge(
           visible: visible,
           invisible: hidden,
         ),
-      )
-      // scss-docs-end utils-visibility
+      ),
+    // scss-docs-end utils-visibility
+    "background-size":
+      (
+        property: background-size,
+        class: bg-s,
+        values: (
+          cover: cover,
+          contain: contain,
+          50: 50%,
+          100: 100%,
+        ),
+      ),
+    "background-repeat": (
+      property: background-repeat,
+      class: bg-r,
+      values: (
+        n: no-repeat,
+        x: repeat-x,
+      ),
+    )
   ),
   $utilities
 );
