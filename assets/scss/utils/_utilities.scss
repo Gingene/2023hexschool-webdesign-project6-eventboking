@@ -44,6 +44,10 @@ $utilities: map-merge(
         property: overflow,
         values: auto hidden visible scroll,
       ),
+    "overflow-x": (
+      property: overflow-x,
+      values: auto hidden visible scroll,
+    ),
     // scss-docs-end utils-overflow
     // scss-docs-start utils-display
     "display":
@@ -100,6 +104,23 @@ $utilities: map-merge(
         null: translate(-50%, -50%),
         x: translateX(-50%),
         y: translateY(-50%),
+      ),
+    ),
+    "translate-tag": (
+      property: transform,
+      class: translate-tag,
+      values: (
+        null: translate(-50%, -50%),
+        l4: translate(-50%, -50%) rotate(-4deg),
+        r4: translate(-50%, -50%) rotate(4deg),
+      ),
+    ),
+    "rotate-card": (
+      property: transform,
+      class: rc,
+      values: (
+        l2: rotate(-2deg),
+        r2: rotate(2deg),
       ),
     ),
     // scss-docs-end utils-position

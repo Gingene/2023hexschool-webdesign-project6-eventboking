@@ -1,0 +1,93 @@
+@mixin main-btn {
+  @extend .btn;
+  @extend .btn-main;
+  @extend .rounded-0;
+}
+
+.main-btn {
+  @include main-btn;
+  &:hover {
+    color: $sub;
+  }
+}
+
+@mixin tag {
+  @extend .btn;
+  @extend .btn-outline-main;
+  @extend .rounded-0;
+  @extend .fw-bold;
+  @extend .py-1;
+  @extend .pe-3;
+  @extend .pe-md-4;
+  @extend .ps-25;
+  @extend .ps-md-35;
+}
+
+.tag {
+  border-left: 4px solid;
+  &:hover {
+    border-left: 4px solid $sub;
+  }
+  @include tag;
+}
+
+@mixin albums-marquee {
+  @extend .bg-main;
+  @extend .text-sub;
+  @extend .ffn;
+  @extend .overflow-x-hidden;
+  @extend .text-nowrap;
+  @extend .fs-6;
+  @extend .fs-lg-2;
+  @extend .py-25;
+  @extend .py-md-4;
+}
+
+.albums-marquee {
+  letter-spacing: 1.6px;
+  @include pad {
+    letter-spacing: 3.2px;
+  }
+  @include albums-marquee;
+}
+
+@keyframes marqee-a {
+  0% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marqee-b {
+  0% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@mixin albums-tag {
+  @extend .d-inline-block;
+  @extend .align-middle;
+  @extend .bg-white;
+  @extend .fw-bold;
+  @extend .px-3;
+  @extend .py-2;
+  @extend .position-absolute;
+  @extend .top-0;
+  @extend .start-50;
+  @extend .translate-tag-l4;
+}
+
+.albums-tag {
+  @include albums-tag;
+}

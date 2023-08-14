@@ -5,3 +5,15 @@ body {
 .ffn {
   font-family: "Noto Serif TC", serif;
 }
+
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 992px) {
+    @content;
+  }
+}

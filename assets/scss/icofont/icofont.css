@@ -58,16 +58,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed37";
 }
 
-.icofont-duotone.icofont-phone:before
-{
-  content: "\13b7f";
-}
-
-.icofont-duotone.icofont-phone:after
-{
-  content: "\13b7e";
-}
-
 .icofont-arrow-left:before
 {
   content: "\ea5c";
@@ -91,6 +81,21 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-rounded-double-right:before
 {
   content: "\ea98";
+}
+
+.icofont-duotone.icofont-phone:before
+{
+  content: "\13b7f";
+}
+
+.icofont-duotone.icofont-phone:after
+{
+  content: "\13b7e";
+}
+
+.icofont-phone:before
+{
+  content: "\efbb";
 }
 
 [class^="icofont-"].icofont-duotone,
