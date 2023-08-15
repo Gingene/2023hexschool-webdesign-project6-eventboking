@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event9</title>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="pt-4 pb-6 py-lg-68">
+      <div class="container">
+        <div class="d-lg-flex justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <div
+              class="d-flex justify-content-between align-items-center mb-4 mb-lg-6"
+            >
+              <div class="d-flex flex-column align-items-center">
+                <span class="main-btn-sub-box mb-2">1</span>
+                <span>訂單確認</span>
+                <!-- <div class="line-1"></div> -->
+              </div>
+
+              <div
+                class="d-flex flex-column align-items-center position-relative"
+              >
+                <span class="main-btn-box mb-2">2</span>
+                <span>結帳付款</span>
+                <div class="line"></div>
+              </div>
+
+              <div class="d-flex flex-column align-items-center">
+                <span class="main-btn-box mb-2">3</span>
+                <span>訂購結果</span>
+              </div>
+            </div>
+            <div class="mb-5 mb-lg-6">
+              <h2 class="buy-title text-lg-center mb-4 mb-lg-5">
+                返老還童-制服聯誼
+              </h2>
+              <table class="table ffn">
+                <thead>
+                  <tr style="border-bottom: 2px solid"></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">日期</th>
+                    <td class="text-end" id="ticket-date">2023/5/12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">票種</th>
+                    <td class="text-end" id="ticket-type">
+                      改頭換面票（含大改造）
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">票價</th>
+                    <td class="text-end" id="ticket-price">$3600</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="/assets/images/sparkler.png"
+                alt="sparkler"
+                width="32px"
+                height="32px"
+              />
+              <h3 class="fw-bold mt-3">聯絡人資料</h3>
+            </div>
+            <form class="ffn" method="get">
+              <!--debug用-->
+              <div class="mb-3">
+                <label for="userName1" class="form-label">聯絡人姓名</label>
+                <input
+                  type="text"
+                  class="form-control bg-bgc border-main rounded-0"
+                  id="userName1"
+                  name="userName"
+                  placeholder="請輸入聯絡人名稱"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="userEmail1" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control bg-bgc border-main rounded-0"
+                  id="userEmail1"
+                  placeholder="請輸入Email"
+                  name="userEmail"
+                  required
+                />
+              </div>
+              <div class="mb-4 mb-lg-5">
+                <label for="userPhone1" class="form-label">手機</label>
+                <input
+                  type="phone"
+                  class="form-control bg-bgc border-main rounded-0"
+                  id="userPhone1"
+                  name="userPhone"
+                  placeholder="請輸入手機號碼"
+                  required
+                />
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <button type="submit" class="main-btn w-100 w-lg-75 mb-3">
+                  確認表單資料<i class="icofont-rounded-double-right"></i>
+                </button>
+                <a href="event-9.html" class="">取消購票</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
