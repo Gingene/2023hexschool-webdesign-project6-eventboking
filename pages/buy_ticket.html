@@ -12,111 +12,321 @@
 
     <main class="pt-4 pb-6 py-lg-68">
       <div class="container">
-        <div class="d-lg-flex justify-content-center align-items-center">
-          <div class="col-lg-6">
-            <div
-              class="d-flex justify-content-between align-items-center mb-4 mb-lg-6"
-            >
-              <div class="d-flex flex-column align-items-center">
-                <span class="main-btn-sub-box mb-2">1</span>
-                <span>訂單確認</span>
-                <!-- <div class="line-1"></div> -->
-              </div>
-
+        <div id="ticket1">
+          <div class="d-lg-flex justify-content-center align-items-center">
+            <div class="col-lg-6">
               <div
-                class="d-flex flex-column align-items-center position-relative"
+                class="d-flex justify-content-between align-items-center mb-4 mb-lg-6"
               >
-                <span class="main-btn-box mb-2">2</span>
-                <span>結帳付款</span>
-                <div class="line"></div>
-              </div>
+                <div class="d-flex flex-column align-items-center">
+                  <span class="main-btn-sub-box mb-2">1</span>
+                  <span>訂單確認</span>
+                  <!-- <div class="line-1"></div> -->
+                </div>
 
-              <div class="d-flex flex-column align-items-center">
-                <span class="main-btn-box mb-2">3</span>
-                <span>訂購結果</span>
+                <div
+                  class="d-flex flex-column align-items-center position-relative"
+                >
+                  <span class="main-btn-box mb-2">2</span>
+                  <span>結帳付款</span>
+                  <div class="line"></div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                  <span class="main-btn-box mb-2">3</span>
+                  <span>訂購結果</span>
+                </div>
               </div>
-            </div>
-            <div class="mb-5 mb-lg-6">
-              <h2 class="buy-title text-lg-center mb-4 mb-lg-5">
-                返老還童-制服聯誼
-              </h2>
-              <table class="table ffn">
-                <thead>
-                  <tr style="border-bottom: 2px solid"></tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">日期</th>
-                    <td class="text-end" id="ticket-date">2023/5/12</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">票種</th>
-                    <td class="text-end" id="ticket-type">
-                      改頭換面票（含大改造）
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">票價</th>
-                    <td class="text-end" id="ticket-price">$3600</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div
-              class="d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="/assets/images/sparkler.png"
-                alt="sparkler"
-                width="32px"
-                height="32px"
-              />
-              <h3 class="fw-bold mt-3">聯絡人資料</h3>
-            </div>
-            <form class="ffn" method="get">
-              <!--debug用-->
-              <div class="mb-3">
-                <label for="userName1" class="form-label">聯絡人姓名</label>
-                <input
-                  type="text"
-                  class="form-control bg-bgc border-main rounded-0"
-                  id="userName1"
-                  name="userName"
-                  placeholder="請輸入聯絡人名稱"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="userEmail1" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control bg-bgc border-main rounded-0"
-                  id="userEmail1"
-                  placeholder="請輸入Email"
-                  name="userEmail"
-                  required
-                />
-              </div>
-              <div class="mb-4 mb-lg-5">
-                <label for="userPhone1" class="form-label">手機</label>
-                <input
-                  type="phone"
-                  class="form-control bg-bgc border-main rounded-0"
-                  id="userPhone1"
-                  name="userPhone"
-                  placeholder="請輸入手機號碼"
-                  required
-                />
+              <div class="mb-5 mb-lg-6">
+                <h2 class="buy-title text-lg-center mb-4 mb-lg-5">
+                  返老還童-制服聯誼
+                </h2>
+                <table class="table ffn">
+                  <thead>
+                    <tr style="border-bottom: 2px solid"></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">日期</th>
+                      <td class="text-end" id="ticket-date">2023/5/12</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">票種</th>
+                      <td class="text-end" id="ticket-type">
+                        改頭換面票（含大改造）
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">票價</th>
+                      <td class="text-end" id="ticket-price">$3600</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <div
                 class="d-flex flex-column justify-content-center align-items-center"
               >
-                <button type="submit" class="main-btn w-100 w-lg-75 mb-3">
-                  確認表單資料<i class="icofont-rounded-double-right"></i>
-                </button>
-                <a href="event-9.html" class="">取消購票</a>
+                <img
+                  src="/assets/images/sparkler.png"
+                  alt="sparkler"
+                  width="32px"
+                  height="32px"
+                />
+                <h3 class="fw-bold mt-3">聯絡人資料</h3>
               </div>
-            </form>
+              <form class="ffn" method="get">
+                <!--debug用-->
+                <div class="mb-3">
+                  <label for="userName1" class="form-label">聯絡人姓名</label>
+                  <input
+                    type="text"
+                    class="form-control bg-bgc border-main rounded-0"
+                    id="userName1"
+                    name="userName"
+                    placeholder="請輸入聯絡人名稱"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="userEmail1" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control bg-bgc border-main rounded-0"
+                    id="userEmail1"
+                    placeholder="請輸入Email"
+                    name="userEmail"
+                    required
+                  />
+                </div>
+                <div class="mb-4 mb-lg-5">
+                  <label for="userPhone1" class="form-label">手機</label>
+                  <input
+                    type="phone"
+                    class="form-control bg-bgc border-main rounded-0"
+                    id="userPhone1"
+                    name="userPhone"
+                    placeholder="請輸入手機號碼"
+                    required
+                  />
+                </div>
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <button
+                    type="submit"
+                    class="main-btn w-100 w-lg-75 mb-3"
+                    id="ticketbtn1"
+                  >
+                    確認表單資料<i class="icofont-rounded-double-right"></i>
+                  </button>
+                  <a href="event-9.html" class="">取消購票</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="d-none" id="ticket2">
+          <div class="d-lg-flex justify-content-center align-items-center">
+            <div class="col-lg-6">
+              <div
+                class="d-flex justify-content-between align-items-center mb-4 mb-lg-6"
+              >
+                <div class="d-flex flex-column align-items-center">
+                  <span class="main-btn-sub-box mb-2"
+                    ><i class="icofont-verification-check"></i
+                  ></span>
+                  <span>訂單確認</span>
+                </div>
+
+                <div
+                  class="d-flex flex-column align-items-center position-relative"
+                >
+                  <span class="main-btn-sub-box mb-2">2</span>
+                  <span>結帳付款</span>
+                  <div class="line"></div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                  <span class="main-btn-box mb-2">3</span>
+                  <span>訂購結果</span>
+                </div>
+              </div>
+              <div class="mb-5 mb-lg-6">
+                <h2 class="buy-title text-lg-center mb-3">返老還童-制服聯誼</h2>
+                <p
+                  class="bg-main text-sub text-center ffn fs-7 fs-lg-6 py-2 px-25 mx-lg-n4 px-lg-4 mb-4 mb-lg-5"
+                >
+                  您的訂單已保留，請在2023/5/30 04:32
+                  前完成繳費。若逾期未繳款，系統將取消您的訂單。
+                </p>
+                <table class="table ffn">
+                  <thead>
+                    <tr style="border-bottom: 2px solid"></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <th scope="row" class="fw-bold py-3 py-lg-2">訂單編號</th>
+                      <td class="text-end" id="ticket-date2">892746123</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="fw-bold py-3 py-lg-2">票種</th>
+                      <td class="text-end" id="ticket-typePrice1">
+                        改頭換面票（含大改造） $3600
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/assets/images/sparkler.png"
+                  alt="sparkler"
+                  width="32px"
+                  height="32px"
+                />
+                <h3 class="fw-bold mt-3">結帳資訊</h3>
+              </div>
+              <form class="ffn" method="get">
+                <!--debug用-->
+                <div class="mb-3">
+                  <label for="userName1" class="form-label">取票資訊</label>
+                  <input
+                    type="text"
+                    class="form-control bg-bgc border-main rounded-0"
+                    id="userName1"
+                    name="userCode"
+                    placeholder="請輸入身分證字號或護照號碼"
+                    required
+                  />
+                  <p>
+                    請輸入您的
+                    <span class="text-mainHover">身分證字號</span>
+                    供取票使用，外籍人士請輸入
+                    <span class="text-mainHover">護照號碼</span>
+                  </p>
+                </div>
+
+                <div class="mb-4 mb-lg-5">
+                  <p class="mb-2">付款方式</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-bgc"
+                      type="radio"
+                      name="paymethod"
+                      id="paymethod1"
+                    />
+                    <label class="form-check-label" for="paymethod1">
+                      信用卡
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-bgc"
+                      type="radio"
+                      name="paymethod"
+                      id="paymethod2"
+                      checked
+                    />
+                    <label class="form-check-label" for="paymethod2">
+                      ATM虛擬帳號
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <button
+                    type="submit"
+                    class="main-btn w-100 w-lg-75"
+                    id="ticketbtn2"
+                  >
+                    確認訂單並繳費<i class="icofont-rounded-double-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="d-none" id="ticket3">
+          <div class="d-lg-flex justify-content-center align-items-center">
+            <div class="col-lg-6">
+              <div
+                class="d-flex justify-content-between align-items-center mb-4 mb-lg-6"
+              >
+                <div class="d-flex flex-column align-items-center">
+                  <span class="main-btn-sub-box mb-2"
+                    ><i class="icofont-verification-check"></i
+                  ></span>
+                  <span>訂單確認</span>
+                </div>
+
+                <div
+                  class="d-flex flex-column align-items-center position-relative"
+                >
+                  <span class="main-btn-sub-box mb-2"
+                    ><i class="icofont-verification-check"></i
+                  ></span>
+                  <span>結帳付款</span>
+                  <div class="line"></div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                  <span class="main-btn-sub-box mb-2">3</span>
+                  <span>訂購結果</span>
+                </div>
+              </div>
+
+              <div
+                class="d-flex flex-column justify-content-center align-items-center mb-5"
+              >
+                <h3>
+                  <i
+                    class="icofont-check-circled fs-1 fs-lg-tc mb-3 mb-lg-2"
+                  ></i>
+                </h3>
+                <h3 class="fw-bold mb-0">訂購成功</h3>
+              </div>
+
+              <div>
+                <table class="table ffn mb-3">
+                  <thead>
+                    <tr style="border-bottom: 2px solid"></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <th scope="row" class="fw-bold">訂單編號</th>
+                      <td class="text-end">892746123</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="fw-bold">訂購時間</th>
+                      <td class="text-end">2023/04/28 14:30</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="fw-bold">票券</th>
+                      <td class="text-end" id="ticket-typePrice2">
+                        改頭換面票（含大改造） $3600
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="fw-bold">取票序號</th>
+                      <td class="text-end text-mainHover">95G54J4434</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="fw-bold">取票號碼</th>
+                      <td class="text-end text-mainHover">04597101</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="ffn mb-0" style="color: #4f4f4f">
+                  請至 7-Eleven 完成取票，請於 ibon
+                  點選【購票/取票/訂房】&gt;【售票系統】&gt;【取票】&gt;【拓元售票系統】。<br />
+                  若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br />
+                  若需退票，請按照退票辦法進行申請。
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

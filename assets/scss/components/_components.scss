@@ -41,8 +41,8 @@
   font-size: 1rem;
   font-weight: 700;
   border: 1px solid $main;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background-color: $bgc;
   z-index: 5;
   @include pad {
@@ -193,14 +193,16 @@
   @include pad {
     letter-spacing: 2.4px;
   }
-  @include event-title;
+  @extend .fs-2;
+  @extend .fs-xl-ts;
+  @extend .fw-bold;
 }
 
 .line {
   border-top: 1px solid;
   width: 80vw;
   position: absolute;
-  top: 12px;
+  top: 16px;
   z-index: -1;
   @include pad {
     top: 24px;
