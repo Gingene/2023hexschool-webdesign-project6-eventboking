@@ -1,5 +1,4 @@
 import "./assets/scss/all.scss";
-// import "./assets/scss/icofont.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 function getCurrentFileName() {
@@ -77,6 +76,12 @@ function checkTicket() {
   const ticket3 = document.querySelector("#ticket3");
   const ticketbtn1 = document.querySelector("#ticketbtn1");
   const ticketbtn2 = document.querySelector("#ticketbtn2");
+  const time = document.querySelector("#time");
+  const timeNow = new Date();
+
+  time.innerText = `${timeNow.getFullYear()}/${
+    timeNow.getMonth() + 1
+  }/${timeNow.getDate()} ${timeNow.getHours()}:${timeNow.getMinutes()}`;
 
   ticketbtn1.addEventListener("click", (e) => {
     e.preventDefault();
@@ -96,14 +101,93 @@ function checkTicket() {
 if (getCurrentFileName() === "buy_ticket.html") {
   getTicketInfo();
   checkTicket();
+  eventhandler();
+}
+
+function eventhandler() {
+  const userName1 = document.querySelector("#userName1");
+  const userEmail1 = document.querySelector("#userEmail1");
+  const userPhone1 = document.querySelector("#userPhone1");
+  const ticketbtn1 = document.querySelector("#ticketbtn1");
+  const checkUser = {
+    name: false,
+    email: false,
+    phone: false,
+  };
+  userName1.addEventListener("input", (e) => {
+    if (e.target.value) {
+      checkUser.name = true;
+    } else {
+      checkUser.name = false;
+    }
+    checkButton();
+  });
+  userEmail1.addEventListener("input", (e) => {
+    if (e.target.value) {
+      checkUser.email = true;
+    } else {
+      checkUser.email = false;
+    }
+    checkButton();
+  });
+  userPhone1.addEventListener("input", (e) => {
+    if (e.target.value) {
+      checkUser.phone = true;
+    } else {
+      checkUser.phone = false;
+    }
+    checkButton();
+  });
+
+  function checkButton() {
+    if (checkUser.name && checkUser.email && checkUser.phone) {
+      ticketbtn1.removeAttribute("disabled");
+    } else {
+      ticketbtn1.setAttribute("disabled", true);
+    }
+  }
 }
 
 if (getCurrentFileName() === "login.html") {
-  let navBtn1 = document.querySelector("#navBtn1");
-  let login1 = document.querySelector("#login1");
+  const navBtn1 = document.querySelector("#navBtn1");
+  const login1 = document.querySelector("#login1");
+
   navBtn1.addEventListener("click", () => {
     login1.classList.toggle("d-flex");
     login1.classList.toggle("d-none");
   });
-  // login1
+  loginHandler();
+}
+
+function loginHandler() {
+  const loginAccountHelp = document.querySelector("#loginAccountHelp");
+  const loginPasswordHelp = document.querySelector("#loginPasswordHelp");
+  const userAccount = document.querySelector("#userAccount");
+  const userPassword = document.querySelector("#userPassword");
+
+  userAccount.addEventListener("focus", accountWarning);
+
+  function accountWarning() {
+    loginAccountHelp.classList.remove("d-none");
+  }
+
+  userAccount.addEventListener("input", (e) => {
+    if (e.target.value.length > 6) {
+      loginAccountHelp.classList.add("d-none");
+      userAccount.removeEventListener("focus", accountWarning);
+    }
+  });
+
+  userPassword.addEventListener("focus", passwordWarning);
+
+  userPassword.addEventListener("input", (e) => {
+    if (e.target.value) {
+      loginPasswordHelp.classList.add("d-none");
+      userPassword.removeEventListener("focus", passwordWarning);
+    }
+  });
+
+  function passwordWarning() {
+    loginPasswordHelp.classList.remove("d-none");
+  }
 }

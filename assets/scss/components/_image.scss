@@ -1,0 +1,54 @@
+.logo {
+  width: 40px;
+  height: 40px;
+  @include pad {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+.banner {
+  height: 350px;
+  @include pad {
+    height: 518px;
+  }
+}
+
+.pic1 {
+  width: 40px;
+  height: 40px;
+  @include pad {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.sparkler-card {
+  width: 20px;
+  height: 20px;
+  @include pad {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.online-card-pic {
+  height: 317px;
+  aspect-ratio: 8 / 3;
+}
+
+.ablums-card-pic {
+  object-fit: cover;
+  height: 267px;
+  @include pad {
+    height: 274px;
+  }
+}
+
+.event-card-pic {
+  height: 210px;
+  object-fit: cover;
+  @include pad {
+    height: 255px;
+  }
+}

@@ -116,6 +116,7 @@
                     type="submit"
                     class="main-btn w-100 w-lg-75 mb-3"
                     id="ticketbtn1"
+                    disabled
                   >
                     確認表單資料<i class="icofont-rounded-double-right"></i>
                   </button>
@@ -227,7 +228,6 @@
                       type="radio"
                       name="paymethod"
                       id="paymethod2"
-                      checked
                     />
                     <label class="form-check-label" for="paymethod2">
                       ATM虛擬帳號
@@ -301,7 +301,7 @@
                     </tr>
                     <tr>
                       <th scope="row" class="fw-bold">訂購時間</th>
-                      <td class="text-end">2023/04/28 14:30</td>
+                      <td class="text-end" id="time">2023/04/28 14:30</td>
                     </tr>
                     <tr>
                       <th scope="row" class="fw-bold">票券</th>

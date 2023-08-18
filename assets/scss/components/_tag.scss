@@ -1,0 +1,38 @@
+@mixin tag {
+  @extend .btn;
+  @extend .btn-outline-main;
+  @extend .rounded-0;
+  @extend .fs-7;
+  @extend .fs-md-6;
+  @extend .fw-bold;
+  @extend .py-1;
+  @extend .pe-3;
+  @extend .pe-md-4;
+  @extend .ps-25;
+  @extend .ps-md-35;
+}
+
+.tag {
+  border-left: 4px solid;
+  &:hover {
+    border-left: 4px solid $sub;
+  }
+  @include tag;
+}
+
+@mixin albums-tag {
+  @extend .d-inline-block;
+  @extend .align-middle;
+  @extend .bg-white;
+  @extend .fw-bold;
+  @extend .px-3;
+  @extend .py-2;
+  @extend .position-absolute;
+  @extend .top-0;
+  @extend .start-50;
+  @extend .translate-tag-l4;
+}
+
+.albums-tag {
+  @include albums-tag;
+}

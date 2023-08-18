@@ -1,0 +1,34 @@
+@mixin main-btn {
+  @extend .btn;
+  @extend .btn-main;
+  @extend .rounded-0;
+}
+
+@mixin main-outline-btn {
+  @extend .btn;
+  @extend .btn-outline-main;
+  @extend .rounded-0;
+}
+
+.main-btn {
+  @include main-btn;
+  &:hover {
+    color: $sub;
+  }
+}
+
+.main-outline-btn {
+  @include main-outline-btn;
+  border: 2px solid;
+  &:hover {
+    color: $sub;
+  }
+}
+
+.main-btn-sub {
+  @include main-btn;
+  color: $sub;
+  &:hover {
+    color: $white;
+  }
+}

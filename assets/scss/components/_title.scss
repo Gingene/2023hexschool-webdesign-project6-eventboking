@@ -1,0 +1,23 @@
+@mixin event-title {
+  @extend .fs-2;
+  @extend .fs-md-ts;
+  @extend .fw-bold;
+}
+
+.event-title {
+  letter-spacing: 1.6px;
+  @include pad {
+    letter-spacing: 3px;
+  }
+  @include event-title;
+}
+
+.buy-title {
+  letter-spacing: 1.6px;
+  @include pad {
+    letter-spacing: 2.4px;
+  }
+  @extend .fs-2;
+  @extend .fs-xl-ts;
+  @extend .fw-bold;
+}
