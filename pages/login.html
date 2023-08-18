@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event9</title>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="mt-4 mt-lg-68" style="height: 75vh">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="col-12 col-lg-4">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+              id="login1"
+            >
+              <img
+                src="/assets/images/sparkler.png"
+                alt="sparkler"
+                width="32px"
+                height="32px"
+              />
+              <h3 class="fw-bold fs-4 my-3">會員登入</h3>
+            </div>
+
+            <form class="ffn" method="POST">
+              <div class="mb-3">
+                <label for="userAccount" class="form-label">帳號</label>
+                <input
+                  type="text"
+                  class="form-control bg-bgc rounded-0"
+                  id="userAccount"
+                  name="userAccount"
+                  minlength="6"
+                  maxlength="50"
+                  placeholder="請輸入帳號"
+                  required
+                />
+                <div id="loginAccountHelp" class="form-text text-other d-none">
+                  請輸入帳號
+                </div>
+              </div>
+              <div class="mb-4 mb-lg-5">
+                <label for="userPassword" class="form-label">密碼</label>
+                <input
+                  type="password"
+                  class="form-control bg-bgc rounded-0"
+                  id="userPassword"
+                  placeholder="請輸入密碼"
+                  minlength="8"
+                  maxlength="20"
+                  name="userPassword"
+                  required
+                />
+                <div id="loginPasswordHelp" class="form-text text-other d-none">
+                  請輸入密碼
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <button type="submit" class="main-btn w-100">
+                  登入<i class="icofont-rounded-double-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.recent a {
+  &:first-child {
+    &:hover {
+      color: $main;
+      text-decoration: underline;
+    }
+  }
+}
+
+.recent-card-font {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,13 @@
+.line {
+  border-top: 1px solid;
+  width: 80vw;
+  position: absolute;
+  top: 16px;
+  z-index: -1;
+  @include pad {
+    top: 24px;
+  }
+  @include pc {
+    width: 40vw;
+  }
+}

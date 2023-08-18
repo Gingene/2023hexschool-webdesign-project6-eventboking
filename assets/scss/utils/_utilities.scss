@@ -217,10 +217,12 @@ $utilities: map-merge(
         100: 100%,
       ),
     ),
-    "viewport-width": (
+    "viewport-width1": (
       property: width,
       class: vw,
       values: (
+        50: 50vw,
+        75: 75vw,
         100: 100vw,
       ),
     ),

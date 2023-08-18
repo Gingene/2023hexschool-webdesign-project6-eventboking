@@ -1,0 +1,43 @@
+@mixin albums-marquee {
+  @extend .bg-main;
+  @extend .text-sub;
+  @extend .ffn;
+  @extend .overflow-x-hidden;
+  @extend .text-nowrap;
+  @extend .fs-6;
+  @extend .fs-lg-2;
+  @extend .py-25;
+  @extend .py-md-4;
+}
+
+.albums-marquee {
+  letter-spacing: 1.6px;
+  @include pad {
+    letter-spacing: 3.2px;
+  }
+  @include albums-marquee;
+}
+
+@keyframes marqee-a {
+  0% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marqee-b {
+  0% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
