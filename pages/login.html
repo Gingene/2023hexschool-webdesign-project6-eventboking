@@ -30,7 +30,7 @@
               <h3 class="fw-bold fs-4 my-3">會員登入</h3>
             </div>
 
-            <form class="ffn" method="POST">
+            <form class="ffn needs-validation" method="POST" novalidate>
               <div class="mb-3">
                 <label for="userAccount" class="form-label">帳號</label>
                 <input
@@ -43,9 +43,7 @@
                   placeholder="請輸入帳號"
                   required
                 />
-                <div id="loginAccountHelp" class="form-text text-other d-none">
-                  請輸入帳號
-                </div>
+                <div class="invalid-feedback">請輸入帳號</div>
               </div>
               <div class="mb-4 mb-lg-5">
                 <label for="userPassword" class="form-label">密碼</label>
@@ -53,15 +51,11 @@
                   type="password"
                   class="form-control bg-bgc rounded-0"
                   id="userPassword"
-                  placeholder="請輸入密碼"
-                  minlength="8"
-                  maxlength="20"
                   name="userPassword"
+                  placeholder="請輸入密碼"
                   required
                 />
-                <div id="loginPasswordHelp" class="form-text text-other d-none">
-                  請輸入密碼
-                </div>
+                <div class="invalid-feedback">請輸入密碼</div>
               </div>
               <div
                 class="d-flex flex-column justify-content-center align-items-center"
