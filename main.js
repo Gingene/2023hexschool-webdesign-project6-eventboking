@@ -156,38 +156,54 @@ if (getCurrentFileName() === "login.html") {
     login1.classList.toggle("d-flex");
     login1.classList.toggle("d-none");
   });
-  loginHandler();
+  bsFormValidation();
 }
 
-function loginHandler() {
-  const loginAccountHelp = document.querySelector("#loginAccountHelp");
-  const loginPasswordHelp = document.querySelector("#loginPasswordHelp");
-  const userAccount = document.querySelector("#userAccount");
-  const userPassword = document.querySelector("#userPassword");
+// function loginHandler() {
+//   const loginAccountHelp = document.querySelector("#loginAccountHelp");
+//   const loginPasswordHelp = document.querySelector("#loginPasswordHelp");
+//   const userAccount = document.querySelector("#userAccount");
+//   const userPassword = document.querySelector("#userPassword");
 
-  userAccount.addEventListener("focus", accountWarning);
+//   userAccount.addEventListener("focus", accountWarning);
 
-  function accountWarning() {
-    loginAccountHelp.classList.remove("d-none");
-  }
+//   function accountWarning() {
+//     loginAccountHelp.classList.remove("d-none");
+//   }
 
-  userAccount.addEventListener("input", (e) => {
-    if (e.target.value.length > 6) {
-      loginAccountHelp.classList.add("d-none");
-      userAccount.removeEventListener("focus", accountWarning);
-    }
+//   userAccount.addEventListener("input", (e) => {
+//     if (e.target.value.length > 6) {
+//       loginAccountHelp.classList.add("d-none");
+//       userAccount.removeEventListener("focus", accountWarning);
+//     }
+//   });
+
+//   userPassword.addEventListener("focus", passwordWarning);
+
+//   userPassword.addEventListener("input", (e) => {
+//     if (e.target.value) {
+//       loginPasswordHelp.classList.add("d-none");
+//       userPassword.removeEventListener("focus", passwordWarning);
+//     }
+//   });
+
+//   function passwordWarning() {
+//     loginPasswordHelp.classList.remove("d-none");
+//   }
+// }
+
+function bsFormValidation() {
+  const validation = document.querySelectorAll(".needs-validation");
+
+  console.log(validation);
+  validation.forEach((form) => {
+    form.addEventListener("submit", (e) => {
+      if (!e.target.checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+
+      e.target.classList.add("was-validated");
+    });
   });
-
-  userPassword.addEventListener("focus", passwordWarning);
-
-  userPassword.addEventListener("input", (e) => {
-    if (e.target.value) {
-      loginPasswordHelp.classList.add("d-none");
-      userPassword.removeEventListener("focus", passwordWarning);
-    }
-  });
-
-  function passwordWarning() {
-    loginPasswordHelp.classList.remove("d-none");
-  }
 }
